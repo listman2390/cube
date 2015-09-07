@@ -34,27 +34,6 @@ public class Cube {
      */
     public Cube() {
     }
-
-    /**
-     * Retrieves representation of an instance of com.grability.cube.service.Cube
-     * @return an instance of com.grability.cube.object.TestCase
-     */
-    @GET
-    @Produces("application/json")
-    public TestCase getJson() {
-        //TODO return proper representation object
-        throw new UnsupportedOperationException();
-    }
-
-    /**
-     * PUT method for updating or creating an instance of Cube
-     * @param content representation for the resource
-     * @return an HTTP response with content of the updated or created resource.
-     */
-    @PUT
-    @Consumes("application/json")
-    public void putJson(TestCase content) {
-    }
     /**
      * POST method for data processing 
      * @param testCases

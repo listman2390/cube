@@ -6,55 +6,100 @@
 package com.grability.cube.object;
 
 /**
- *
+ * 
  * @author listman
  */
 public class Point {
-    private int x;
-    private int y;
-    private int z;
-    private int v;
+	/**
+	 * coordenada x en el cubo
+	 */
+	private int x;
+	/**
+	 * cooredenada y en el cubo
+	 */
+	private int y;
+	/**
+	 * coordena da z en el cubo
+	 */
+	private int z;
+	/**
+	 * valor de la posicion
+	 */
+	private int v;
 
-    public Point() {
-    }
+	/**
+	 * constructor sin argumentos
+	 */
+	public Point() {
+	}
 
-    public Point(int x, int y, int z, int v) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.v = v;
-    }
+	/**
+	 * constructor con datos del punto
+	 */
+	public Point(int x, int y, int z, int v) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+		this.v = v;
+	}
 
-    public int getX() {
-        return x;
-    }
+	/**
+	 * metodo get de la coordenada x
+	 */
+	public int getX() {
+		return x;
+	}
 
-    public void setX(int x) {
-        this.x = x-1;
-    }
+	/**
+	 * metodo set de la coordena x por defaul se le resta uno ya que la vista
+	 * esta trabajanco coon matriz con rango de [1,N]
+	 */
+	public void setX(int x) {
+		this.x = x - 1;
+	}
 
-    public int getY() {
-        return y;
-    }
+	/**
+	 * metodo get de la coordenada y
+	 */
+	public int getY() {
+		return y;
+	}
 
-    public void setY(int y) {
-        this.y = y-1;
-    }
+	/**
+	 * metodo set de la coordena y por defaul se le resta uno ya que la vista
+	 * esta trabajanco coon matriz con rango de [1,N]
+	 */
+	public void setY(int y) {
+		this.y = y - 1;
+	}
 
-    public int getZ() {
-        return z;
-    }
+	/**
+	 * metodo get de la cooredena z
+	 */
+	public int getZ() {
+		return z;
+	}
 
-    public void setZ(int z) {
-        this.z = z-1;
-    }
+	/**
+	 * metodo set de la coordena z por defaul se le resta uno ya que la
+	 * vista esta trabajanco coon matriz con rango de [1,N]
+	 */
+	public void setZ(int z) {
+		this.z = z - 1;
+	}
 
-    public int getV() {
-        return v;
-    }
+	/**
+	 * metodo get del valor del  punto
+	 */
+	public int getV() {
+		return v;
+	}
 
-    public void setV(int v) {
-        this.v = v;
-    }
-    
+	/**
+	 * metodo set del valor del punto
+	 */
+	public void setV(int v) {
+		this.v = v;
+	}
+
 }

@@ -17,8 +17,7 @@ import java.util.List;
  * @author listman
  */
 public class CubeProcessor {
-    private static final String OPERATION_UPDATE="UPDATE";
-    private static final String OPERATION_QUERY="QUERY";
+    
     /**
      * Metodo Comando que realiza el procesamiento de las operaciones
      * @param testCases
@@ -30,10 +29,10 @@ public class CubeProcessor {
              Cube cube=new Cube(testCase.getMatrixLength());
              for(Operation operation:testCase.getOperations()){
                  switch(operation.getType()){
-                     case OPERATION_UPDATE:
+                     case Operation.OPERATION_UPDATE:
                          evalUpdate(operation, cube);
                          break;
-                     case OPERATION_QUERY:
+                     case Operation.OPERATION_QUERY:
                          result.add(evalQuery(operation, cube));
                          break;
                  }

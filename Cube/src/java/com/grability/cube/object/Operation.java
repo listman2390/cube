@@ -8,27 +8,52 @@ package com.grability.cube.object;
 import java.util.List;
 
 /**
- *
+ * Clase que representa una opereacion
+ * 
  * @author listman
  */
 public class Operation {
-    private String type;
-    private List<Point> data;
+	/**
+	 * Tipos de opereciones permitidas
+	 */
+	public static final String OPERATION_UPDATE = "UPDATE";
+	public static final String OPERATION_QUERY = "QUERY";
+	/**
+	 * tipo de operacion por defecto se toma UPDATE o QUERY
+	 */
+	private String type;
+	/**
+	 * Lista de Puntos con las que se realiza la operacion
+	 */
+	private List<Point> data;
 
-    public String getType() {
-        return type;
-    }
+	/**
+	 * metodo get para el tipo de operacion
+	 */
+	public String getType() {
+		return type;
+	}
 
-    public void setType(String type) {
-        this.type = type;
-    }
+	/**
+	 * metodo set para el tipo de operacion
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
 
-    public List<Point> getData() {
-        return data;
-    }
+	/**
+	 * metodo get para los datos de la operacion
+	 */
+	public List<Point> getData() {
+		return data;
+	}
 
-    public void setData(List<Point> data) {
-        this.data = data;
-    }
-    
+	/**
+	 * metodo set para los datos de la operacion
+	 */
+
+	public void setData(List<Point> data) {
+		this.data = data;
+	}
+
 }

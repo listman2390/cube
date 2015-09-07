@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/09/2015, 01:53:47 PM
+    Author     : lgamboa
+*/
+
+    .cube {
+                height: 480px;
+                position: relative;
+                width: 600px;
+                top: 200px;
+            }
+            .rightFace,.leftFace,.topFace div {
+                padding: 10px;
+            }
+            .rightFace,.leftFace,.topFace {
+                position: absolute;
+            }
+            .leftFace {
+                -webkit-transform: skewY(30deg);
+                -moz-transform: skewY(30deg);
+                background-color: #9AB;
+            }
+            .rightFace {
+                -moz-transform: skewY(-30deg);
+                -webkit-transform: skewY(-30deg);
+                background-color: #89A;
+            }
+            .topFace div {
+                -moz-transform: skewY(-30deg) scaleY(1.16);
+                -webkit-transform: skewY(-30deg) scaleY(1.16);
+                background-color: #ABC;
+            }
+            .topFace {
+                -moz-transform: rotate(60deg);
+                -webkit-transform: rotate(60deg);
+            }
+            .columna{
+                border:1px solid black;
+                text-align: center;
+                width: 30px;
+            }
