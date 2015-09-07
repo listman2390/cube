@@ -51,9 +51,9 @@ public class CubeProcessor {
         Point sup=operation.getData().get(1);
         int total=0;
         for(Point point:cube.getPoints()){
-            if(between(point.getX(), inf.getX(), sup.getX())
-               && between(point.getY(), inf.getY(), sup.getY())
-               && between(point.getZ(), inf.getZ(), sup.getZ())){
+            if(between(point.getX(), inf.getX()-1, sup.getX()-1)
+               && between(point.getY(), inf.getY()-1, sup.getY()-1)
+               && between(point.getZ(), inf.getZ()-1, sup.getZ()-1)){
                 total+=point.getV();
             }
         }
@@ -76,6 +76,6 @@ public class CubeProcessor {
      */
     public void evalUpdate(Operation operation,Cube cube){
         Point point= operation.getData().get(0);
-        cube.setValue(point.getX()-1, point.getY()-1, point.getZ(), point.getV());
+        cube.setValue(point.getX()-1, point.getY()-1, point.getZ()-1, point.getV());
     }
 }

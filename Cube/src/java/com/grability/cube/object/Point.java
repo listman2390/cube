@@ -51,11 +51,10 @@ public class Point {
 	}
 
 	/**
-	 * metodo set de la coordena x por defaul se le resta uno ya que la vista
-	 * esta trabajanco coon matriz con rango de [1,N]
+	 * metodo set de la coordena x 
 	 */
 	public void setX(int x) {
-		this.x = x - 1;
+		this.x = x;
 	}
 
 	/**
@@ -66,11 +65,10 @@ public class Point {
 	}
 
 	/**
-	 * metodo set de la coordena y por defaul se le resta uno ya que la vista
-	 * esta trabajanco coon matriz con rango de [1,N]
+	 * metodo set de la coordena y 
 	 */
 	public void setY(int y) {
-		this.y = y - 1;
+		this.y = y;
 	}
 
 	/**
@@ -81,11 +79,10 @@ public class Point {
 	}
 
 	/**
-	 * metodo set de la coordena z por defaul se le resta uno ya que la
-	 * vista esta trabajanco coon matriz con rango de [1,N]
+	 * metodo set de la coordena z 
 	 */
 	public void setZ(int z) {
-		this.z = z - 1;
+		this.z = z;
 	}
 
 	/**
